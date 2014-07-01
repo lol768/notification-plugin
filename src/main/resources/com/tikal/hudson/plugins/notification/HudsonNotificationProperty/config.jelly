@@ -22,9 +22,10 @@
                                 <td>
                                     <f:entry title="Protocol" description="" field="protocol">
                                         <select class="setting-input" name="protocol">
-                                            <f:option value="HTTP" selected="${endpoint.protocol=='HTTP'}">HTTP</f:option>
-                                            <f:option value="TCP" selected="${endpoint.protocol=='TCP'}">TCP</f:option>
-                                            <f:option value="UDP" selected="${endpoint.protocol=='UDP'}">UDP</f:option>
+                                            <f:option value="HTTP"  selected="${endpoint.protocol=='HTTP'}">HTTP</f:option>
+                                            <f:option value="HTTPS" selected="${endpoint.protocol=='HTTPS'}">HTTPS</f:option>
+                                            <f:option value="TCP"   selected="${endpoint.protocol=='TCP'}">TCP</f:option>
+                                            <f:option value="UDP"   selected="${endpoint.protocol=='UDP'}">UDP</f:option>
                                         </select>
                                     </f:entry>
                                 </td>
