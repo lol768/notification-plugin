@@ -45,6 +45,12 @@ public enum Protocol {
             output.close();
         }
     },
+    HTTPS {
+        @Override
+        protected void send(String url, byte[] data, int timeout, boolean isJson) throws IOException {
+            // TODO: Implement SSL support
+        }
+    },
     HTTP {
         @Override
         protected void send(String url, byte[] data, int timeout, boolean isJson) throws IOException {
